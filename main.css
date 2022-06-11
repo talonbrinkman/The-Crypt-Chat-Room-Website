@@ -4,26 +4,24 @@
   list-style: none;
   text-decoration: none;
 }
-/* width */
+/*Scrollbar*/
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 8px;
 }
-/* Track */
 ::-webkit-scrollbar-track{
   background: #4a4949;
 }
-/* Handle */
 ::-webkit-scrollbar-thumb{
   background: #292828;
   border-radius: 20px;
 }
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover{
   background: #e8a12e;
 }
 body{
   background: #4a4949;
 }
+/*Header*/
 .header{
   width: 100%;
   height: 80px;
@@ -93,6 +91,7 @@ body{
   margin: 10px auto;
   float: left;
 }
+/*Icons*/
 i{
   transition: 0.4s;
   color: #292828;
@@ -102,6 +101,7 @@ i:hover{
   color: #e8a12e;
   cursor: pointer;
 }
+/*Footer*/
 footer{
   width: 100%;
   display: block;
@@ -111,7 +111,8 @@ footer{
   background: #292828;
   height: 250px;
   box-shadow: 20px 2px 20px rgba(0, 0, 0, 0.4);
-  position: sticky;
+  position: relative;
+  bottom: 0;
 }
 .inner-footer{
   display: block;
@@ -190,6 +191,12 @@ footer{
   display: block;
   font-size: 16px;
 }
+/*Conversation Box*/
+#messaging{
+  margin: 8px;
+  padding: 0;
+  overflow: visible;
+}
 .conversation-box{
   width: 100%;
   height: 60%;
@@ -239,8 +246,6 @@ footer{
   color: #e8a12e;
   margin: 8px 51% 8px 8px;
   float: left;
-  /*margin: 8px auto;*/
-  /*border-bottom: 1px solid rgba(232, 161, 46, .2);*/
 }
 .conversation-box .message a1{
   color: #4a4949;
@@ -264,6 +269,7 @@ footer{
 ::placeholder{
   color: #4a4949;
 }
+/*Message Bar*/
 .message-bar{
   width: 100%;
   height: 55px;
@@ -394,7 +400,7 @@ footer{
   width: 19px;
   left: 4px;
   bottom: 4px;
-  background: #4a4949;;
+  background: #4a4949;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -412,12 +418,6 @@ input:checked + .slider:before{
 }
 .slider.round:before{
   border-radius: 50%;
-}
-#username{
-  min-width: 200px;
-  margin: 8px 60% 8px 8px;
-  float: left;
-  width: 30%;
 }
 .setting{
   margin: 8px;
@@ -439,4 +439,69 @@ input:checked + .slider:before{
   margin: 0;
   padding: 0;
   border: 0;
+}
+/*Home Menu*/
+.menu{
+  width: 40%;
+  padding: 8px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.menu .menu-information{
+  width: 100%;
+  text-align: center;
+}
+.menu .menu-information input{
+  width: 100%;
+  transition: .3s;
+  padding: 4px 8px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 16px;
+  color: #e8a12e;
+  outline: none;
+}
+.menu .menu-buttons{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+.menu .menu-buttons button{
+  transition: .3s;
+  width: 49%;
+  padding: 3px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 16px;
+  color: #4a4949;
+}
+.menu .menu-buttons button:hover{
+  transition: .3s;
+  color: #e8a12e;
+  cursor: pointer;
+}
+.menu .information{
+  width: 80%;
+  margin: 8px auto;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.menu .information h1{
+  font-size: 20px;
+  color: #e8a12e;
+}
+.menu .information a{
+  font-size: 16px;
+  color: #292828;
 }

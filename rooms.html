@@ -3,49 +3,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <title>The Crypt | Home</title>
+    <title>The Crypt | Rooms</title>
     <script src="https://kit.fontawesome.com/56a1441670.js" crossorigin="anonymous"></script>
   </head>
   <body onload="changePageStatus()">
     <div class="header">
       <div class="inner-header">
         <div class="logo-container">
-          <img class="logo" src="favicon.png"><h1>The<span> Crypt</span></h1></img>
+          <img class="logo" src="favicon.png"><h1>The<span> Crypt</span></h1>
         </div>
         <ul class="navigation">
-          <a href="index.html"><li id="home">Home</li></a>
-          <a href="rooms.html"><li>Rooms</li></a>
+          <a href="index.html"><li>Home</li></a>
+          <a href="rooms.html"><li id="rooms">Rooms</li></a>
           <a href="about.html"><li>About</li></a>
         </ul>
       </div>
     </div>
-    <div class="menu">
-      <div class="menu-information">
-        <form>
-          <input type="text" placeholder="Username" required autofocus>
-          <input type="text" placeholder="Channel Name" required>
-          <input type="text" placeholder="Channel Password" required>
-        </form>
+    <div id="messaging">
+      <div class="conversation-box" id="convoBox">
+        <div class="server-message">
+          <a>You joined</a>
+        </div>
+        <div class="server-message">
+          <a>Nikola joined</a>
+        </div>
+        <div class="message">
+          <a>Nikola</a>
+          <h1>Whats up man?</h1>
+          <a1>11:56</a1>
+        </div>
+        <div class="server-message">
+          <a>Jim joined</a>
+        </div>
+        <div class="message">
+          <a>Jim</a>
+          <h1>Hey guys, hows it hanging?</h1>
+          <a1>12:44</a1>
+        </div>
+        <div class="user-message">
+          <a>You</a>
+          <img src="favicon.png">
+          <a1>12:44</a1>
+        </div>
       </div>
-      <div class="menu-buttons">
-        <button>Join</button>
-        <button>Host</button>
-      </div>
-      <div class="information">
-        <h1><em>Joining</em></h1>
-        <a>Start by entering a <em>Username</em>, then enter a <em>Channel Name</em> and <em>Password</em> and click <strong>Join</strong> to enter another users room.</a>
-        <h1><em>Hosting</em></h1>
-        <a>Start by entering a <em>Username</em>, then enter a <em>Channel Name</em> and <em>Password</em> and click <strong>Host</strong> to create
-          your own room. Other users can join your room by entering their <em>Username</em>, <em>Channel Name</em>, and <em>Channel Password</em> you chose, and clicking <strong>Join</strong></a>
-        <h1><em>Privacy</em></h1>
-        <a>Users information is <strong>not</strong> stored permanently and is <strong>deleted</strong> when the user logs off. Room information and history is <strong>not</strong> stored permanently and is also <strong>deleted</strong> with deletion of the room.</a>
-        <h1><em>More</em></h1>
-        <a>For more information on The Crypt or our end to end encryption visit the <strong>About</strong> page.</a>
+      <div class="message-bar">
+        <a href="#popup1"><i class="fa-solid fa-gear fa-3x"></i></a>
+          <div id="popup1" class="overlay">
+          	<div class="popup">
+          		<h2>Settings</h2>
+          		<a class="close" href="#">&times;</a>
+          		<div class="content">
+                <form>
+                  <input type="text" placeholder="Username Required" id="username" required>
+                </form>
+                <div class="setting">
+                  <a>Private Room</a>
+                  <label class="switch">
+                    <input type="checkbox" id="private-room">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="setting">
+                  <a>Anonymous Mode</a>
+                  <label class="switch">
+                    <input type="checkbox" id="anonymous-mode">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+          		</div>
+          	</div>
+        </div>
+          <input type="file" id="fileInput" name="fileInput">
+          <i class="fa-solid fa-arrow-up-from-bracket fa-3x" onclick="chooseFile();"></i>
+          <input type="text" placeholder="Message..." id="user-message"></input>
+          <i class="fa-solid fa-paper-plane fa-3x" id="send-button" onclick="send()"></i>
       </div>
     </div>
     <script>
       function changePageStatus(){
-        document.getElementById("home").style.color = "#e8a12e";
+        document.getElementById("rooms").style.color = "#e8a12e";
       }
       function send(){
         var userMessage = document.getElementById("user-message").value;
@@ -62,7 +98,7 @@
         }
         else{
           if(document.getElementById("username").value == ""){
-            window.location.assign(window.location.href + "popup1");
+            window.location.assign(window.location.href + "#popup1");
             document.getElementById("username").focus();
           }
           else if(document.getElementById("user-message").value != ""){
