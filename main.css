@@ -1,0 +1,442 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar{
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+  background: #4a4949;
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+  background: #292828;
+  border-radius: 20px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+  background: #e8a12e;
+}
+body{
+  background: #4a4949;
+}
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background: #292828;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  position: sticky;
+}
+.inner-header{
+  width: 98%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.logo-container{
+  height: 100%;
+  display: table;
+  float: left;
+  cursor: default;
+}
+.logo-container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+}
+.logo-container h1 span{
+  font-weight: 800;
+  color: #e8a12e;
+}
+.navigation{
+  float: right;
+  height: 100%;
+}
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+  margin: -9px auto;
+}
+.navigation a:last-child{
+  padding-right: 0;
+}
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100;
+  color: white;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.navigation a li:hover{
+  cursor: pointer;
+  transition: 0.4s;
+  color: #e8a12e;
+}
+.logo{
+  width: 60px;
+  display: block;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 10px auto;
+  float: left;
+}
+i{
+  transition: 0.4s;
+  color: #292828;
+}
+i:hover{
+  transition: 0.4s;
+  color: #e8a12e;
+  cursor: pointer;
+}
+footer{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background: #292828;
+  height: 250px;
+  box-shadow: 20px 2px 20px rgba(0, 0, 0, 0.4);
+  position: sticky;
+}
+.inner-footer{
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+.inner-footer .footer-container{
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+.inner-footer .footer-container img{
+  width: 150px;
+  height: auto;
+}
+.inner-footer .footer-third{
+  width: calc(21.67% - 70px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+.inner-footer .footer-third:last-child{
+  margin-right: 0;
+}
+.inner-footer .footer-third h1{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+  color: #e8a12e;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.inner-footer .footer-third a{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 12px;
+  color: #4a4949;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.inner-footer .footer-third span{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+  color: #e8a12e;
+  font-weight: 200;
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.inner-footer .footer-container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 34px;
+  font-weight: 100;
+}
+.inner-footer .footer-third li{
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 20px;
+}
+.inner-footer .footer-third i{
+  display: inline-block;
+  padding: 0 5px;
+  color: #e8a12e;
+  font-size: 20px;
+}
+.inner-footer .footer-third span{
+  font-weight: 200;
+  color: #e8a12e;
+  display: block;
+  font-size: 16px;
+}
+.conversation-box{
+  width: 100%;
+  height: 60%;
+}
+.conversation-box .message{
+  width: fit-content;
+  max-width: 600px;
+  padding: 1px 40px;
+  margin: 8px 51% 8px 8px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: #292828;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 12px;
+  color: #e8a12e;
+  float: left;
+  text-align: right;
+  max-inline-size: 592px;
+  overflow-wrap: break-word;
+}
+.conversation-box .user-message{
+  width: fit-content;
+  max-width: 600px;
+  padding: 1px 40px;
+  margin: 8px 8px 8px 51%;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: #292828;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 12px;
+  color: #e8a12e;
+  float: right;
+  text-align: right;
+  max-inline-size: 592px;
+  overflow-wrap: break-word;
+}
+.conversation-box .server-message{
+  width: 10%;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 10px;
+  color: #e8a12e;
+  margin: 8px 51% 8px 8px;
+  float: left;
+  /*margin: 8px auto;*/
+  /*border-bottom: 1px solid rgba(232, 161, 46, .2);*/
+}
+.conversation-box .message a1{
+  color: #4a4949;
+}
+.conversation-box .user-message a1{
+  color: #4a4949;
+}
+.conversation-box .message h1{
+  font-size: 18px;
+}
+.conversation-box .user-message h1{
+  font-size: 18px;
+}
+.conversation-box img{
+  width: fit-content;
+  max-width: 20vw;
+  padding: 8px;
+  display: block;
+  margin: 0;
+}
+::placeholder{
+  color: #4a4949;
+}
+.message-bar{
+  width: 100%;
+  height: 55px;
+  display: flex;
+  position: sticky;
+}
+.message-bar input{
+  transition: 0.5s;
+  width: 96%;
+  vertical-align: middle;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  border-color: #292828;
+  margin: 4px;
+  padding: 0 0 0 20px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  color: #e8a12e;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+  float: right;
+  outline: none;
+}
+.message-bar input:hover{
+  transition: 0.5s;
+  border-color: #e8a12e;
+}
+.message-bar i{
+  vertical-align: middle;
+  margin: 4px;
+  float: right;
+}
+.about{
+  width: 100%
+  margin: 4px;
+  height: 70%;
+  color: #e8a12e;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 18px;
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+.popup{
+  margin: 70px auto;
+  padding: 20px;
+  background: #4a4949;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.popup h2{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #292828;
+  font-size: 18px;
+}
+.popup .close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #292828;
+}
+.popup .close:hover{
+  color: #e8a12e;
+}
+.popup .content{
+  max-height: 30%;
+  overflow: auto;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+/*Toggle Switches*/
+/* The switch - the box around the slider */
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+  margin: 8px;
+}
+/* Hide default HTML checkbox */
+.switch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292828;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before{
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background: #4a4949;;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider{
+  background-color: #e8a12e;
+}
+input:checked + .slider:before{
+  -webkit-transform: translateX(33px);
+  -ms-transform: translateX(33px);
+  transform: translateX(33px);
+}
+/* Rounded sliders */
+.slider.round{
+  border-radius: 26px;
+}
+.slider.round:before{
+  border-radius: 50%;
+}
+#username{
+  min-width: 200px;
+  margin: 8px 60% 8px 8px;
+  float: left;
+  width: 30%;
+}
+.setting{
+  margin: 8px;
+  display: table;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #292828;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.setting a{
+  display: table-cell;
+  vertical-align: middle;
+}
+#fileInput{
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
