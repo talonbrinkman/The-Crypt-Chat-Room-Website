@@ -20,6 +20,7 @@
 }
 body{
   background: #4a4949;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 /*Header*/
 .header{
@@ -74,7 +75,6 @@ body{
   vertical-align: middle;
   height: 100;
   color: white;
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 18px;
   transition: 0.4s;
 }
@@ -140,7 +140,6 @@ footer{
   margin-right: 0;
 }
 .inner-footer .footer-third h1{
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 18px;
   color: #e8a12e;
   display: block;
@@ -148,7 +147,6 @@ footer{
   margin-bottom: 20px;
 }
 .inner-footer .footer-third a{
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 12px;
   color: #4a4949;
   font-weight: 200;
@@ -157,7 +155,6 @@ footer{
   padding-bottom: 5px;
 }
 .inner-footer .footer-third span{
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 18px;
   color: #e8a12e;
   font-weight: 200;
@@ -170,7 +167,6 @@ footer{
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 34px;
   font-weight: 100;
 }
@@ -212,7 +208,6 @@ footer{
   border-color: #292828;
   background: rgba(41, 40, 40, .8);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 12px;
   color: #e8a12e;
   float: left;
@@ -231,7 +226,6 @@ footer{
   border-color: #292828;
   background: rgba(41, 40, 40, .8);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 12px;
   color: #e8a12e;
   float: right;
@@ -241,7 +235,6 @@ footer{
 }
 .conversation-box .server-message{
   width: 10%;
-  font-family: 'Kdam Thmor Pro', sans-serif;
   font-size: 10px;
   color: #e8a12e;
   margin: 8px 51% 8px 8px;
@@ -510,4 +503,87 @@ input:checked + .slider:before{
 .menu .information a{
   font-size: 16px;
   color: #292828;
+}
+.channel-viewer{
+  width: 60%;
+  max-height: 70%;
+  padding: 8px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+.channel-viewer .refresh{
+  width: 30%;
+  margin: 3px auto;
+  float: left;
+}
+.channel-viewer .refresh button{
+  transition: .3s;
+  width: 49%;
+  min-width: 100px;
+  padding: 3px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 16px;
+  color: #4a4949;
+}
+.channel-viewer .refresh button:hover{
+  transition: .3s;
+  color: #e8a12e;
+  cursor: pointer;
+}
+.channel-viewer .channel{
+  width: 95%;
+  padding: 4px;
+  margin: 10px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: #4a4949;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+.channel-viewer .channel .channel-info{
+  width: 49%;
+  margin: 4px;
+  float: left;
+}
+.channel-viewer .channel .channel-join{
+  width: 49%;
+  margin: 4px;
+  float: right;
+}
+.channel-viewer .channel .channel-info h1{
+  font-size: 20px;
+  color: #e8a12e;
+}
+.channel-viewer .channel .channel-info a{
+  font-size: 16px;
+  color: #292828;
+}
+.channel-viewer .channel .channel-join button{
+  transition: .3s;
+  width: 49%;
+  padding: 3px;
+  margin: 8px auto;
+  border: solid 3px #292828;
+  border-radius: 15px;
+  background: rgba(41, 40, 40, .8);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 16px;
+  color: #4a4949;
+  float: right;
+}
+.channel-viewer .channel .channel-join button:hover{
+  transition: .3s;
+  color: #e8a12e;
+  cursor: pointer;
 }

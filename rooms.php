@@ -14,12 +14,23 @@
         </div>
         <ul class="navigation">
           <a href="index.php"><li>Home</li></a>
-          <a href="rooms.php"><li id="rooms">Rooms</li></a>
+          <a href="rooms.php"><li id="rooms">Channels</li></a>
           <a href="about.php"><li>About</li></a>
         </ul>
       </div>
     </div>
-    <div id="messaging">
+    <div class="channel-viewer">
+      <div class="channel">
+        <div class="channel-info">
+          <h1>Bain's Channel</h1>
+          <a>4 Members</a>
+        </div>
+        <div class="channel-join">
+          <button>Join</button>
+        </div>
+      </div>
+    </div>
+    <!--<div id="messaging">
       <div class="conversation-box" id="convoBox">
         <div class="server-message">
           <a>You joined</a>
@@ -78,7 +89,7 @@
           <input type="text" placeholder="Message..." id="user-message"></input>
           <i class="fa-solid fa-paper-plane fa-3x" id="send-button" onclick="send()"></i>
       </div>
-    </div>
+    </div>-->
     <script>
       function changePageStatus(){
         document.getElementById("rooms").style.color = "#e8a12e";

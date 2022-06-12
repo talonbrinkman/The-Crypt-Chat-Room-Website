@@ -1,3 +1,7 @@
+<?php
+  include 'create-room.php';
+?>
+<!DOCTYPE html>
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
@@ -14,7 +18,7 @@
         </div>
         <ul class="navigation">
           <a href="index.php"><li id="home">Home</li></a>
-          <a href="rooms.php"><li>Rooms</li></a>
+          <a href="channels.php"><li>Channels</li></a>
           <a href="about.php"><li>About</li></a>
         </ul>
       </div>
