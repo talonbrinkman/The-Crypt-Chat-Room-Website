@@ -366,6 +366,12 @@ footer{
     width: 70%;
   }
 }
+#username{
+  padding: 3px 8px;
+  width: 70%;
+  margin: 0 20% 0 0;
+  float: left;
+}
 /*Toggle Switches*/
 /* The switch - the box around the slider */
 .switch{
